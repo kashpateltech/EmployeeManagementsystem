@@ -1,0 +1,16 @@
+{
+  "name": "02-Homework",
+  "version": "1.0.0",
+  "description": "## Your Task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "as-table": "^1.0.55",
+    "figlet": "^1.5.2"
+  }
+}
