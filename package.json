@@ -11,6 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "as-table": "^1.0.55",
-    "figlet": "^1.5.2"
+    "express": "^4.17.1",
+    "figlet": "^1.5.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3"
   }
 }

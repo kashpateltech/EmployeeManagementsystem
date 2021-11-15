@@ -9,13 +9,21 @@ const questions = require('./lib/questions');
 
 //This code calls my classes
 const InquirerFunctions = require('./lib/inquirer');
-const SQLquery = require('./lib/SQL_queries');
+const SQLquery = require('./lib/SQL_query');
 
 //This array contains the inquirer prompt types I use
 const inquirerTypes = [
     'input', 'confirm', 'list'
 ]
 
+connection.connect((err) => {
+    if (err) {
+        console.log('Not connected to database');
+        throw err;
+    } else {
+        console.log('Connected to database');
+    }
+});
 //This line of code runs a synchronous function through the figlet npm that displays the designated text string in the console
 console.log(figlet.textSync('Employee Management', {
     font: 'Standard',

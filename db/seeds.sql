@@ -1,4 +1,4 @@
-USE employee_management_db;
+USE Employee_Management_db;
 INSERT INTO department (name)
  VALUES ("IT"),
 		("Production"),
@@ -23,7 +23,7 @@ VALUES  ("Manager", 65000, 1),
         ("Salesperson", 70000, 5);
 -- SELECT * FROM role;
 
-USE employee_management_db;
+USE Employee_Management_db;
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id) 
 VALUES  ("Ron", "Cutajar", 1, NULL ),
