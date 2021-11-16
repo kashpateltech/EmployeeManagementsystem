@@ -3,13 +3,13 @@ const inquirer = require('inquirer');
 const figlet = require('figlet');
 
 //This code calls various files in my lib folder that contain objects I reference
-const connection = require("./lib/SQL_login");
-const commandMenuChoices = require('./lib/commandMenu');
+const connection = require("./lib/sql_login");
+const commandMenuChoices = require('./lib/commandmenu');
 const questions = require('./lib/questions');
 
 //This code calls my classes
 const InquirerFunctions = require('./lib/inquirer');
-const SQLquery = require('./lib/SQL_query');
+const SQLquery = require('./lib/sql_query');
 
 //This array contains the inquirer prompt types I use
 const inquirerTypes = [
@@ -24,6 +24,8 @@ connection.connect((err) => {
         console.log('Connected to database');
     }
 });
+
+global.db = connection;
 //This line of code runs a synchronous function through the figlet npm that displays the designated text string in the console
 console.log(figlet.textSync('Employee Management', {
     font: 'Standard',
