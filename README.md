@@ -37,7 +37,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 The following video shows an example of the application being used from the command line:
 
-[![A video thumbnail shows the command-line employee management application.](https://youtu.be/T3OxKwUgPsM)
+[![A video thumbnail shows the command-line employee management application.]](https://youtu.be/T3OxKwUgPsM)
 
 ## Getting Started
 
